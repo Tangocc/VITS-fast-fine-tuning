@@ -86,7 +86,8 @@ if __name__ == "__main__":
                 
                 processed_files += 1
                 print(f"Processed: {processed_files}/{total_files}")
-            except:
+            except Exception as e:
+                print(e)
                 continue
 
     # # clean annotation
